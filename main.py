@@ -38,14 +38,14 @@ def imprimir_nombres():
 def hacer_grandioso():
     for nombres in personajes:
         if (nombres["tipo"] == "Mago"):
+            personajes["nombre"]=str("EL GRAN"+nombres["nombre"])
             #personajes.update({"nombre": "EL GRAN"+nombres["nombre"]})
-            print("Nombre :","El gran "+nombres["nombre"])
-            #print("Nombre :",nombres["nombre"])
+            #print("Nombre :","El gran "+nombres["nombre"])
+            print("Nombre :",nombres["nombre"])
 
 def lista_actualizada():
     for nombres in personajes:
         if (nombres["tipo"] == "Mago"):
-            #personajes.update({"nombre": "EL GRAN"+nombres["nombre"]})
             print("Nombre :","El gran "+nombres["nombre"],", Tipo :", nombres["tipo"])
         else:
             print("Nombre :", nombres["nombre"], ", Tipo :", nombres["tipo"])
