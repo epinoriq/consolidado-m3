@@ -1,5 +1,5 @@
 
-print("------------------Bienvenido a la Lista de personajes------------------")
+print("------------------Bienvenido a la Lista de personajes.------------------")
 
 personajes = [
     {"id": 1, "nombre": "Harry Houdini", "tipo": "Mago"},
