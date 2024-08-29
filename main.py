@@ -13,42 +13,41 @@ personajes = [
     {"id": 9, "nombre": "Juanes", "tipo": "Otros"},
 ]
 
-
+copia_personajes = personajes
 
 def ver_magos():
-    for nombres in personajes:
-        if (nombres["tipo"] == "Mago"):
-            print("Nombre :", nombres["nombre"])
+    for personaje in personajes:
+        if (personaje["tipo"] == "Mago"):
+            print("Nombre :", personaje["nombre"])
 
 def ver_cientificos():
-    for nombres in personajes:
-        if (nombres["tipo"] == "Cientifico"):
-            print("Nombre :", nombres["nombre"])
+    for personaje in personajes:
+        if (personaje["tipo"] == "Cientifico"):
+            print("Nombre :", personaje["nombre"])
 
 def ver_otros():
-    for nombres in personajes:
-        if (nombres["tipo"] == "Otros"):
-            print("Nombre :", nombres["nombre"])
+    for personaje in personajes:
+        if (personaje["tipo"] == "Otros"):
+            print("Nombre :", personaje["nombre"])
 
 def imprimir_nombres():
-    for nombres in personajes:
-            print("Nombre :", nombres["nombre"], ", Tipo :", nombres["tipo"])
+    for personaje in personajes:
+            print("Nombre :", personaje["nombre"], ", Tipo :", personaje["tipo"])
 
 
 def hacer_grandioso():
-    for nombres in personajes:
-        if (nombres["tipo"] == "Mago"):
-            personajes["nombre"]=str("EL GRAN"+nombres["nombre"])
-            #personajes.update({"nombre": "EL GRAN"+nombres["nombre"]})
-            #print("Nombre :","El gran "+nombres["nombre"])
-            print("Nombre :",nombres["nombre"])
+    for personaje in personajes:
+        if (personaje["tipo"] == "Mago"):
+            #personaje["nombre"]="EL GRAN "+personaje["nombre"]
+            #personajes.update({"nombre": "EL GRAN"+personaje["nombre"]})
+            print("Nombre :","El gran "+personaje["nombre"])
 
 def lista_actualizada():
-    for nombres in personajes:
-        if (nombres["tipo"] == "Mago"):
-            print("Nombre :","El gran "+nombres["nombre"],", Tipo :", nombres["tipo"])
+    for personaje in personajes:
+        if (personaje["tipo"] == "Mago"):
+            print("Nombre :","El gran "+personaje["nombre"],", Tipo :", personaje["tipo"])
         else:
-            print("Nombre :", nombres["nombre"], ", Tipo :", nombres["tipo"])
+            print("Nombre :", personaje["nombre"], ", Tipo :", personaje["tipo"])
 
 while True:
     print()
